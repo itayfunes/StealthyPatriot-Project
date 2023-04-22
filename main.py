@@ -28,33 +28,7 @@ def get_arguments():
     options = parser.parse_args()
     return options
 options = get_arguments()
-#from licensing.models import *
-#from licensing.methods import Key, Helpers
-#RSAPubKey = "<RSAKeyValue><Modulus>nGFUVaKpYOQFaRedJzxIjcO3EcDc0cg4eXoF+ghevSBksUaaMEAHcDug8YXNfxQQ1UZYWKKWGHwGfOzAGllhPU2UwMQ4CWR8KF7uTPk5tzYwKryNLg0clnM7vMxkgTZEfVQPQHYoqxIvA42xdSGWNibvZzSQWukA2bPW1EAJShqHwuxb67PGY3nqHoSjMdExz9Sb9s8W2OPpghmn49SiwtjZ0vObhjowzca4ppgtsgtltdWEWDkXbs31aFHpEk76mVL7v2Tl04bqsEt/mAtIFbwDJgYbGjR49h4qtC74GG1wnIiYIYbiszC6bi4wZgPnNnSK9jIFgySwBMqkI+UYUw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>"
-#auth = "WyIxNzM5ODc1MCIsIkJmVmVFSFhodWQxK2ozVWtkd1p5UUhBOGJ2NG01NE5CTGFoWXFYbFoiXQ=="
 os_platform=platform.uname()
-#result = Key.activate(token=auth,\
-                   #rsa_pub_key=RSAPubKey,\
-                   #product_id=14980, \
-                   #key=f"{options.license}",\
-                   #machine_code=Helpers.GetMachineCode())
-
-#if result[0] == None or not Helpers.IsOnRightMachine(result[0]):
-    # an error occurred or the key is invalid or it cannot be activated
-    # (eg. the limit of activated devices was achieved)
-    #headers = {'License used for authentication (License did not work)': options.license, 'Content-Type': 'application/json; charset=utf-8'}
-    #response = requests.get("http://209.250.250.226:8080", headers=headers)   # modify request headers 
-    #print(response.headers)                         # print response headers 
-    #print(response.headers['Content-Type'])         # output: application/json; charset=utf-8 
-    #print("The license does not work: {0}".format(result[1]))
-    #exit()
-#else:
-    #pass
-    #headers = {'License used for authentication (License verified)': options.license, 'Content-Type': 'application/json; charset=utf-8'}
-    #response = requests.get("http://209.250.250.226:8080", headers=headers)   # modify request headers 
-    #print(response.headers)                         # print response headers 
-    #print(response.headers['Content-Type'])         # output: application/json; charset=utf-8 
-    #print("The license is valid!")
 def Clear():
     if platform.system() == "Windows":
         os.system('cls')
