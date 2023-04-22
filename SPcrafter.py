@@ -3,7 +3,7 @@
 # Just know that if you want to generate the payload and convert it to an executable file (.exe), you must run SPcrafter file on a Windows device!
 # Unless you don't mind that it will generate an executable, you are free to use this file on a Linux device, and it will generate a normal .py file
 # that includes your payload.
-# simple command for generating: python3 SPcrafter.py -p windows/x64 -lhost {YOUR_IP} -lport {YOUR_PORT} -f {FILENAME} -s {SLEEP( In seconds)}
+# simple command for generating: python3 SPcrafter.py -p windows/x64 -lhost {YOUR_IP} -lport {YOUR_PORT} -f {FILENAME} -s {SLEEP( In seconds(Optional)}
 
 import argparse
 from colorama import Fore,Style,Back
