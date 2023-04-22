@@ -1,13 +1,3 @@
-# This software and its documentation are confidential and proprietary
-# information of Rythen Research. No part of the software and
-# documents may be copied, reproduced, transmitted, translated, or reduced to
-# any electronic medium or machine-readable form without the prior written
-# consent of Rythen Research.
-#
-# Rythen Research makes no representation with respect to the contents,
-# and assumes no responsibility for any misuse of the software and documents.
-# This publication and the contents hereof are subject
-# to change without a memorandum
 import socket
 import time
 import platform
